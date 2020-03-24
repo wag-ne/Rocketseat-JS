@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <script>
+      function experiencia(usuarios) {
+        for (let value of usuarios) {
+          console.log(`O ${value.nome} possui as habilidades: ${value.habilidades.join(', ')}`)
+        }
+      }
+
+      var usuarios = [
+        {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+
+      experiencia(usuarios);
+    </script>
+  </body>
+</html>

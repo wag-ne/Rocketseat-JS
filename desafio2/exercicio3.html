@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id='teste'>
+    </div>
+
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+
+      var content = document.querySelector('#teste');
+      var fatherList = document.createElement('ul')
+
+      for (let nome of nomes) {
+        var childList = document.createElement('li')
+
+        var textElement = document.createTextNode(`${nome}`)
+        childList.appendChild(textElement)
+
+        content.appendChild(fatherList)
+        fatherList.appendChild(childList)
+      }
+    </script>
+  </body>
+</html>
